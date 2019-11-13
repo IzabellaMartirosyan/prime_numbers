@@ -13,5 +13,15 @@ module.exports = {
         div++;
       }
       return true;
+    },
+
+    printArray: function (mass) {
+        if(typeof mass === "string"){
+            console.log(mass)
+        }else{
+            for(let i = 0; i < mass.length; i++){
+                console.log(mass[i]);
+              }
+        }
     }
 }
